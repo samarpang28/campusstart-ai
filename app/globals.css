@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+@keyframes draw-route {
+  from {
+    stroke-dashoffset: 300;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes rise-fade {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.route-line {
+  stroke-dasharray: 300;
+  animation: draw-route 1.8s ease-out forwards;
+}
+
+.rise-in {
+  animation: rise-fade 0.6s ease-out forwards;
+}
+
+/* Perforated ticket edge */
+.ticket-perforation {
+  background-image: radial-gradient(
+    circle,
+    #fbf7ef 3px,
+    transparent 3.5px
+  );
+  background-size: 16px 16px;
+  background-position: center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .route-line,
+  .rise-in {
+    animation: none !important;
+    opacity: 1 !important;
+    stroke-dashoffset: 0 !important;
+    transform: none !important;
+  }
+}
