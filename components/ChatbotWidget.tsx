@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { LogoMark } from "@/components/Logo";
 
 type Msg = { from: "bot" | "user"; text: string };
 
@@ -64,7 +65,10 @@ export default function ChatbotWidget() {
       {open && (
         <div className="mb-3 w-80 origin-bottom-right animate-[chatpop_.25s_ease-out] overflow-hidden rounded-2xl border border-ink/10 bg-white shadow-xl">
           <div className="flex items-center justify-between bg-ink px-4 py-3">
-            <span className="font-display text-sm text-parchment">CampusStart.AI Assistant</span>
+            <span className="flex items-center gap-2">
+              <LogoMark size={22} />
+              <span className="font-display text-sm text-parchment">Assistant</span>
+            </span>
             <button onClick={() => setOpen(false)} aria-label="Close chat" className="text-parchment/70 hover:text-parchment">
               ✕
             </button>

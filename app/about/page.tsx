@@ -1,10 +1,12 @@
 import Image from "next/image";
 import RevealOnScroll from "@/components/RevealOnScroll";
+import { LogoMark } from "@/components/Logo";
 
 export default function AboutPage() {
   return (
     <main className="mx-auto max-w-3xl px-6 py-16 md:py-20">
       <RevealOnScroll>
+        <LogoMark size={36} className="mb-5" />
         <p className="font-mono text-xs uppercase tracking-[0.2em] text-coral">About us</p>
         <h1 className="mt-3 font-display text-3xl text-ink sm:text-4xl">
           Built for the students, by a student.

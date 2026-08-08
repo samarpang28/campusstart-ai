@@ -4,6 +4,7 @@ import { useState, FormEvent } from "react";
 import Link from "next/link";
 import { supabase } from "@/lib/supabaseClient";
 import RevealOnScroll from "@/components/RevealOnScroll";
+import { LogoMark } from "@/components/Logo";
 
 const CORE_SERVICES = [
   { title: "Rental and roommate matching", status: "live", href: "/services/accommodation", text: "Verified rooms and compatible roommates, matched on budget, habits, and program." },
@@ -54,6 +55,7 @@ export default function ServicesPage() {
   return (
     <main className="mx-auto max-w-6xl px-6 py-16 md:py-20">
       <RevealOnScroll>
+        <LogoMark size={36} className="mb-5" />
         <p className="font-mono text-xs uppercase tracking-[0.2em] text-coral">Services</p>
         <h1 className="mt-3 font-display text-3xl text-ink sm:text-4xl">What we offer</h1>
         <p className="mt-3 max-w-xl text-[15px] text-ink/65">

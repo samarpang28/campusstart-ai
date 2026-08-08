@@ -3,6 +3,7 @@
 import { useState, FormEvent } from "react";
 import { supabase } from "@/lib/supabaseClient";
 import RevealOnScroll from "@/components/RevealOnScroll";
+import { LogoMark } from "@/components/Logo";
 
 export default function ContactPage() {
   const [name, setName] = useState("");
@@ -24,6 +25,7 @@ export default function ContactPage() {
   return (
     <main className="mx-auto max-w-5xl px-6 py-16 md:py-20">
       <RevealOnScroll>
+        <LogoMark size={36} className="mb-5" />
         <p className="font-mono text-xs uppercase tracking-[0.2em] text-coral">Contact</p>
         <h1 className="mt-3 font-display text-3xl text-ink sm:text-4xl">Get in touch</h1>
         <p className="mt-3 max-w-xl text-[15px] text-ink/65">

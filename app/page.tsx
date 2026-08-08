@@ -5,6 +5,7 @@ import Link from "next/link";
 import { supabase } from "@/lib/supabaseClient";
 import RevealOnScroll from "@/components/RevealOnScroll";
 import Testimonials from "@/components/Testimonials";
+import { LogoMark } from "@/components/Logo";
 
 const SEGMENTS = [
   "MBA / MS / M.Tech admit",
@@ -57,6 +58,9 @@ export default function Home() {
     <main>
       {/* HERO */}
       <section className="mx-auto max-w-6xl px-6 pb-20 pt-8 md:pb-28 md:pt-16">
+        <div className="mb-10 flex justify-center">
+          <LogoMark size={44} animated />
+        </div>
         <div className="grid items-center gap-14 md:grid-cols-2">
           <div>
             <p className="mb-5 font-mono text-xs uppercase tracking-[0.2em] text-ink/50">

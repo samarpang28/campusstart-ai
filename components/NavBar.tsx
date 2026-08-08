@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Logo from "@/components/Logo";
 
 const LINKS = [
   { href: "/", label: "Home" },
@@ -16,12 +17,8 @@ export default function NavBar() {
   return (
     <header className="sticky top-0 z-40 border-b border-ink/10 bg-parchment/95 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <Link
-          href="/"
-          onClick={() => setOpen(false)}
-          className="font-display text-xl font-semibold tracking-tight text-ink"
-        >
-          CampusStart<span className="text-marigold">.AI</span>
+        <Link href="/" onClick={() => setOpen(false)}>
+          <Logo size={30} />
         </Link>
 
         <nav className="hidden gap-8 font-body text-sm text-ink/70 sm:flex">
