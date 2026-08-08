@@ -2,6 +2,7 @@
 
 import { useEffect, useState, FormEvent } from "react";
 import { supabase } from "@/lib/supabaseClient";
+import MatchPreview from "@/components/MatchPreview";
 
 const SEGMENTS = [
   "MBA / MS / M.Tech admit",
@@ -268,6 +269,8 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      <MatchPreview />
 
       {/* SINGLE VALUE PROP */}
       <section className="border-y border-ink/10 bg-ink text-parchment">
