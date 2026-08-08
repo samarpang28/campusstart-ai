@@ -28,6 +28,10 @@ const plexMono = IBM_Plex_Mono({
   display: "swap",
 });
 
+// Forces the news ticker's signup count to be fetched fresh on every page
+// load instead of using a stale cached build-time value.
+export const dynamic = "force-dynamic";
+
 export const metadata: Metadata = {
   title: "CampusStart.AI — Your Boarding Pass to Campus Life",
   description:

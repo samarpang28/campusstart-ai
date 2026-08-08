@@ -11,4 +11,11 @@ if (!supabaseUrl || !supabaseAnonKey) {
   );
 }
 
-export const supabase = createClient(supabaseUrl, supabaseAnonKey);
+export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
+  global: {
+    // Next.js caches fetch() by default in Server Components, which was
+    // making the news ticker's signup count go stale. This forces every
+    // Supabase request (server and client) to always fetch fresh data.
+    fetch: (input, init) => fetch(input, { ...init, cache: "no-store" }),
+  },
+});
