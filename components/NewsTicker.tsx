@@ -25,9 +25,9 @@ export default async function NewsTicker() {
 
   return (
     <div className="overflow-hidden bg-ink py-1.5">
-      <div className="ticker-track flex whitespace-nowrap">
+      <div className="ticker-track inline-flex w-max whitespace-nowrap">
         {loop.map((item, i) => (
-          <span key={i} className="mx-6 font-mono text-[11px] text-parchment/80">
+          <span key={i} className="mx-6 text-[11px] font-medium text-parchment/80">
             <span className="mr-2 text-marigold">●</span>
             {item}
           </span>

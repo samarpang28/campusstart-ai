@@ -43,6 +43,7 @@
 
 .ticker-track {
   animation: ticker-scroll 22s linear infinite;
+  will-change: transform;
 }
 
 .ticker-track:hover {

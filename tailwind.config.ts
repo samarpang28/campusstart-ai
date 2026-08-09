@@ -17,9 +17,9 @@ const config: Config = {
         coral: "#E85D4E",
       },
       fontFamily: {
-        display: ["var(--font-fraunces)", "serif"],
+        display: ["var(--font-inter)", "sans-serif"],
         body: ["var(--font-inter)", "sans-serif"],
-        mono: ["var(--font-plex-mono)", "monospace"],
+        mono: ["var(--font-inter)", "sans-serif"],
       },
     },
   },

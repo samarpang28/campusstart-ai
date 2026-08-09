@@ -58,12 +58,10 @@ export default function Home() {
     <main>
       {/* HERO */}
       <section className="mx-auto max-w-6xl px-6 pb-20 pt-8 md:pb-28 md:pt-16">
-        <div className="mb-10 flex justify-center">
-          <LogoMark size={44} animated />
-        </div>
         <div className="grid items-center gap-14 md:grid-cols-2">
           <div>
-            <p className="mb-5 font-mono text-xs uppercase tracking-[0.2em] text-ink/50">
+            <LogoMark size={36} animated className="mb-5" />
+            <p className="mb-5 text-xs font-semibold uppercase tracking-[0.2em] text-ink/50">
               Now boarding · Pilot cohort
             </p>
             <h1 className="font-display text-4xl leading-[1.08] text-ink sm:text-5xl md:text-[3.2rem]">
@@ -80,9 +78,9 @@ export default function Home() {
               <a href="#waitlist" className="rounded-full bg-marigold px-7 py-3 text-sm font-semibold text-ink shadow-sm transition hover:brightness-95">
                 Reserve my seat
               </a>
-              <span className="font-mono text-xs text-ink/50">Free · 2 minutes · No spam</span>
+              <span className="text-xs font-medium text-ink/50">Free to reserve · Priority goes to early joiners</span>
             </div>
-            <Link href="/services" className="mt-4 inline-block font-mono text-xs text-marigold underline underline-offset-2">
+            <Link href="/services" className="mt-4 inline-block text-xs font-medium text-marigold underline underline-offset-2">
               See everything we&apos;re building &rarr;
             </Link>
           </div>
