@@ -221,8 +221,8 @@ export default function MatchTool() {
 
   return (
     <section className="mx-auto max-w-6xl px-6 py-16 md:py-20">
-      <p className="font-mono text-xs uppercase tracking-[0.2em] text-coral">Live in pilot</p>
-      <h1 className="mt-3 max-w-xl font-display text-2xl text-ink sm:text-3xl">
+      <p className="font-mono font-semibold text-xs uppercase tracking-[0.2em] text-coral">Live in pilot</p>
+      <h1 className="mt-3 max-w-xl font-display font-semibold text-2xl text-ink sm:text-3xl">
         Find your verified room — shared or private
       </h1>
       <p className="mt-3 max-w-xl text-[15px] text-ink/65">
@@ -305,7 +305,7 @@ export default function MatchTool() {
       </div>
 
       {!roommateFiltersRelevant && citySelected && (
-        <p className="mt-2 font-mono text-[11px] text-ink/40">
+        <p className="mt-2 font-mono font-medium text-[11px] text-ink/40">
           Roommate preferences are hidden for private rooms — there's no roommate to match against.
         </p>
       )}
@@ -359,14 +359,14 @@ export default function MatchTool() {
               <RoomIllustration className="h-24 w-full" />
               <div className="border-b border-dashed border-ink/10 px-5 py-3">
                 <div className="flex items-center justify-between">
-                  <p className="font-mono text-[10px] uppercase tracking-[0.15em] text-ink/40">
+                  <p className="font-mono font-semibold text-[10px] uppercase tracking-[0.15em] text-ink/40">
                     {listing.city} · {listing.university}
                   </p>
                   <span className="font-mono text-[10px] font-bold text-mint">{pct}% match</span>
                 </div>
-                <p className="mt-1 font-display text-lg text-ink">{listing.area}</p>
+                <p className="mt-1 font-display font-semibold text-lg text-ink">{listing.area}</p>
                 <p className="mt-1 text-sm text-ink/60">₹{listing.rent.toLocaleString("en-IN")}/month</p>
-                <span className="mt-1 inline-block rounded-full bg-ink/5 px-2 py-0.5 font-mono text-[9px] uppercase tracking-wide text-ink/50">
+                <span className="mt-1 inline-block rounded-full bg-ink/5 px-2 py-0.5 font-mono font-semibold text-[9px] uppercase tracking-wide text-ink/50">
                   {listing.roomType === "Private" ? "Private room" : "Shared room"}
                 </span>
               </div>
@@ -375,7 +375,7 @@ export default function MatchTool() {
                   <>
                     <div className="flex items-center justify-between">
                       <p className="text-sm font-medium text-ink">{listing.roommate.name}</p>
-                      <span className="font-mono text-[9px] uppercase tracking-wide text-mint">✓ Verified</span>
+                      <span className="font-mono font-semibold text-[9px] uppercase tracking-wide text-mint">✓ Verified</span>
                     </div>
                     <p className="mt-1 text-xs text-ink/55">
                       {listing.roommate.gender} · {listing.roommate.course} · {listing.roommate.year}
@@ -384,7 +384,7 @@ export default function MatchTool() {
                 ) : (
                   <div className="flex items-center justify-between">
                     <p className="text-sm font-medium text-ink/60">No roommate — private room</p>
-                    <span className="font-mono text-[9px] uppercase tracking-wide text-mint">✓ Verified</span>
+                    <span className="font-mono font-semibold text-[9px] uppercase tracking-wide text-mint">✓ Verified</span>
                   </div>
                 )}
                 {criteria.length > 0 && (
@@ -402,7 +402,7 @@ export default function MatchTool() {
         </div>
       )}
 
-      <p className="mt-6 font-mono text-[11px] text-ink/40">
+      <p className="mt-6 font-mono font-medium text-[11px] text-ink/40">
         Illustrative sample data for demo purposes — not live inventory yet.
       </p>
     </section>

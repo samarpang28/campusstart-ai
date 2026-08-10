@@ -7,8 +7,8 @@ export default function AboutPage() {
     <main className="mx-auto max-w-3xl px-6 py-16 md:py-20">
       <RevealOnScroll>
         <LogoMark size={36} className="mb-5" />
-        <p className="font-mono text-xs uppercase tracking-[0.2em] text-coral">About us</p>
-        <h1 className="mt-3 font-display text-3xl text-ink sm:text-4xl">
+        <p className="font-mono font-semibold text-xs uppercase tracking-[0.2em] text-coral">About us</p>
+        <h1 className="mt-3 font-display font-semibold text-3xl text-ink sm:text-4xl">
           Built for the students, by a student.
         </h1>
       </RevealOnScroll>
@@ -24,7 +24,7 @@ export default function AboutPage() {
           />
         </div>
         <div>
-          <p className="font-display text-lg text-ink">Samarpan Ghosh</p>
+          <p className="font-display font-semibold text-lg text-ink">Samarpan Ghosh</p>
           <p className="text-sm text-ink/60">PGDM-ExP, IMT Ghaziabad</p>
         </div>
       </RevealOnScroll>
@@ -54,7 +54,7 @@ export default function AboutPage() {
       </RevealOnScroll>
 
       <RevealOnScroll delayMs={200} className="mt-10 rounded-2xl border border-ink/10 bg-paper p-6">
-        <h2 className="font-display text-lg text-ink">Why we&apos;re starting narrow</h2>
+        <h2 className="font-display font-semibold text-lg text-ink">Why we&apos;re starting narrow</h2>
         <p className="mt-3 text-[15px] leading-relaxed text-ink/70">
           We could have built ten features on day one. We didn&apos;t. Out of everything I heard in those
           conversations, one problem came up again and again: finding a verified place to live, with
@@ -64,7 +64,7 @@ export default function AboutPage() {
       </RevealOnScroll>
 
       <RevealOnScroll delayMs={250} className="mt-8">
-        <h2 className="font-display text-lg text-ink">What&apos;s next</h2>
+        <h2 className="font-display font-semibold text-lg text-ink">What&apos;s next</h2>
         <p className="mt-3 text-[15px] leading-relaxed text-ink/70">
           Everything else students told us they needed — loan guidance, budgeting help, understanding a
           new city, a local marketplace, a real community — is real, and it&apos;s coming. You can see the

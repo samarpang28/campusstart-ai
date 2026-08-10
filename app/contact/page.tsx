@@ -26,8 +26,8 @@ export default function ContactPage() {
     <main className="mx-auto max-w-5xl px-6 py-16 md:py-20">
       <RevealOnScroll>
         <LogoMark size={36} className="mb-5" />
-        <p className="font-mono text-xs uppercase tracking-[0.2em] text-coral">Contact</p>
-        <h1 className="mt-3 font-display text-3xl text-ink sm:text-4xl">Get in touch</h1>
+        <p className="font-mono font-semibold text-xs uppercase tracking-[0.2em] text-coral">Contact</p>
+        <h1 className="mt-3 font-display font-semibold text-3xl text-ink sm:text-4xl">Get in touch</h1>
         <p className="mt-3 max-w-xl text-[15px] text-ink/65">
           Questions, feedback, or partnership ideas — send a message and we&apos;ll get back to you.
         </p>
@@ -65,8 +65,8 @@ export default function ContactPage() {
           <div className="rounded-2xl border border-ink/10 bg-white p-6 shadow-sm">
             {status === "success" ? (
               <div className="py-8 text-center">
-                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-mint">Sent</p>
-                <h3 className="mt-3 font-display text-lg text-ink">Thanks, {name.split(" ")[0]}.</h3>
+                <p className="font-mono font-semibold text-[10px] uppercase tracking-[0.2em] text-mint">Sent</p>
+                <h3 className="mt-3 font-display font-semibold text-lg text-ink">Thanks, {name.split(" ")[0]}.</h3>
                 <p className="mt-2 text-sm text-ink/65">We&apos;ll get back to you soon.</p>
               </div>
             ) : (

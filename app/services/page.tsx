@@ -56,8 +56,8 @@ export default function ServicesPage() {
     <main className="mx-auto max-w-6xl px-6 py-16 md:py-20">
       <RevealOnScroll>
         <LogoMark size={36} className="mb-5" />
-        <p className="font-mono text-xs uppercase tracking-[0.2em] text-coral">Services</p>
-        <h1 className="mt-3 font-display text-3xl text-ink sm:text-4xl">What we offer</h1>
+        <p className="font-mono font-semibold text-xs uppercase tracking-[0.2em] text-coral">Services</p>
+        <h1 className="mt-3 font-display font-semibold text-3xl text-ink sm:text-4xl">What we offer</h1>
         <p className="mt-3 max-w-xl text-[15px] text-ink/65">
           One thing is real and live today. Everything else is on our roadmap — clearly marked, so you
           know exactly what you can use right now.
@@ -73,15 +73,15 @@ export default function ServicesPage() {
               }`}
             >
               <span
-                className={`inline-block rounded-full px-2.5 py-1 font-mono text-[9px] uppercase tracking-wide ${
+                className={`inline-block rounded-full px-2.5 py-1 font-mono font-semibold text-[9px] uppercase tracking-wide ${
                   s.status === "live" ? "bg-mint/15 text-mint" : "bg-ink/5 text-ink/40"
                 }`}
               >
                 {s.status === "live" ? "Live in pilot" : "Coming soon"}
               </span>
-              <h3 className="mt-3 font-display text-base text-ink">{s.title}</h3>
+              <h3 className="mt-3 font-display font-semibold text-base text-ink">{s.title}</h3>
               <p className="mt-2 text-[13px] leading-relaxed text-ink/60">{s.text}</p>
-              {s.href && <p className="mt-3 font-mono text-[11px] text-marigold">Try it &rarr;</p>}
+              {s.href && <p className="mt-3 font-mono font-medium text-[11px] text-marigold">Try it &rarr;</p>}
             </div>
           );
           return (
@@ -93,7 +93,7 @@ export default function ServicesPage() {
       </div>
 
       <RevealOnScroll className="mt-16">
-        <p className="font-mono text-xs uppercase tracking-[0.2em] text-coral">Where we&apos;re headed</p>
+        <p className="font-mono font-semibold text-xs uppercase tracking-[0.2em] text-coral">Where we&apos;re headed</p>
         <p className="mt-2 max-w-xl text-[14px] text-ink/60">
           Longer-horizon ideas from our original research — not committed features yet, but part of the
           vision.
@@ -109,13 +109,13 @@ export default function ServicesPage() {
 
       {/* PARTNER INTEREST */}
       <RevealOnScroll className="mt-20 rounded-2xl border border-ink/10 bg-paper p-8">
-        <p className="font-mono text-xs uppercase tracking-[0.2em] text-coral">Partner with us</p>
-        <h2 className="mt-3 font-display text-xl text-ink">Property owners and universities</h2>
+        <p className="font-mono font-semibold text-xs uppercase tracking-[0.2em] text-coral">Partner with us</p>
+        <h2 className="mt-3 font-display font-semibold text-xl text-ink">Property owners and universities</h2>
         <p className="mt-2 max-w-lg text-[14px] text-ink/60">
           Our core interaction depends directly on you. If you list verified accommodation or represent a
           university, we&apos;d like to hear from you.
         </p>
-        <p className="mt-3 font-mono text-[11px] text-ink/40">
+        <p className="mt-3 font-mono font-medium text-[11px] text-ink/40">
           Future partnerships are also planned with insurance providers, internet service providers, and
           moving companies as we expand into budgeting and relocation support.
         </p>

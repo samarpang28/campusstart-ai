@@ -67,7 +67,7 @@ export default function ChatbotWidget() {
           <div className="flex items-center justify-between bg-ink px-4 py-3">
             <span className="flex items-center gap-2">
               <LogoMark size={22} />
-              <span className="font-display text-sm text-parchment">Assistant</span>
+              <span className="font-display font-semibold text-sm text-parchment">Assistant</span>
             </span>
             <button onClick={() => setOpen(false)} aria-label="Close chat" className="text-parchment/70 hover:text-parchment">
               ✕

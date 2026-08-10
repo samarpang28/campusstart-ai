@@ -64,7 +64,7 @@ export default function Home() {
             <p className="mb-5 text-xs font-semibold uppercase tracking-[0.2em] text-ink/50">
               Now boarding · Pilot cohort
             </p>
-            <h1 className="font-display text-4xl leading-[1.08] text-ink sm:text-5xl md:text-[3.2rem]">
+            <h1 className="font-display font-semibold text-4xl leading-[1.08] text-ink sm:text-5xl md:text-[3.2rem]">
               Your boarding pass
               <br />
               to campus life.
@@ -89,34 +89,34 @@ export default function Home() {
             <div className="relative mx-auto max-w-sm overflow-hidden rounded-2xl bg-ink text-parchment shadow-2xl shadow-ink/20">
               <div className="flex items-center justify-between border-b border-dashed border-parchment/25 px-6 py-4">
                 <span className="font-display text-sm font-semibold tracking-wide">CampusStart.AI</span>
-                <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-mint">Verified</span>
+                <span className="font-mono font-semibold text-[10px] uppercase tracking-[0.2em] text-mint">Verified</span>
               </div>
               <div className="px-6 py-6">
                 <div className="flex items-center justify-between">
                   <div>
-                    <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-parchment/50">From</p>
-                    <p className="font-display text-2xl">Home</p>
+                    <p className="font-mono font-semibold text-[10px] uppercase tracking-[0.2em] text-parchment/50">From</p>
+                    <p className="font-display font-semibold text-2xl">Home</p>
                   </div>
                   <svg viewBox="0 0 120 24" className="mx-3 h-5 w-24 shrink-0" fill="none">
                     <path d="M2 12h108" stroke="#F2A93B" strokeWidth="2" strokeDasharray="1 7" strokeLinecap="round" className="route-line" pathLength={300} />
                     <path d="M104 6l8 6-8 6" stroke="#F2A93B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                   <div className="text-right">
-                    <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-parchment/50">To</p>
-                    <p className="font-display text-2xl">Campus</p>
+                    <p className="font-mono font-semibold text-[10px] uppercase tracking-[0.2em] text-parchment/50">To</p>
+                    <p className="font-display font-semibold text-2xl">Campus</p>
                   </div>
                 </div>
                 <div className="mt-6 grid grid-cols-3 gap-4 border-t border-dashed border-parchment/25 pt-5">
                   <div>
-                    <p className="font-mono text-[9px] uppercase tracking-[0.15em] text-parchment/50">Program</p>
+                    <p className="font-mono font-semibold text-[9px] uppercase tracking-[0.15em] text-parchment/50">Program</p>
                     <p className="mt-1 text-sm font-medium">MBA / MS / PhD</p>
                   </div>
                   <div>
-                    <p className="font-mono text-[9px] uppercase tracking-[0.15em] text-parchment/50">Seat</p>
+                    <p className="font-mono font-semibold text-[9px] uppercase tracking-[0.15em] text-parchment/50">Seat</p>
                     <p className="mt-1 text-sm font-medium">Room + Roommate</p>
                   </div>
                   <div>
-                    <p className="font-mono text-[9px] uppercase tracking-[0.15em] text-parchment/50">Status</p>
+                    <p className="font-mono font-semibold text-[9px] uppercase tracking-[0.15em] text-parchment/50">Status</p>
                     <p className="mt-1 text-sm font-medium text-mint">Matched</p>
                   </div>
                 </div>
@@ -127,8 +127,8 @@ export default function Home() {
                 <div className="ticket-perforation mx-6 h-px opacity-40" />
               </div>
               <div className="flex items-center justify-between px-6 pb-5 pt-1">
-                <span className="font-mono text-[10px] text-parchment/50">PNR CSAI&ndash;2027</span>
-                <span className="font-mono text-[10px] text-parchment/50">One seat. One decision.</span>
+                <span className="font-mono font-medium text-[10px] text-parchment/50">PNR CSAI&ndash;2027</span>
+                <span className="font-mono font-medium text-[10px] text-parchment/50">One seat. One decision.</span>
               </div>
             </div>
           </div>
@@ -139,13 +139,13 @@ export default function Home() {
       <section className="border-y border-ink/10 bg-paper">
         <div className="mx-auto max-w-6xl px-6 py-16 md:py-20">
           <RevealOnScroll>
-            <h2 className="max-w-lg font-display text-2xl text-ink sm:text-3xl">Sound familiar?</h2>
+            <h2 className="max-w-lg font-display font-semibold text-2xl text-ink sm:text-3xl">Sound familiar?</h2>
           </RevealOnScroll>
           <div className="mt-10 grid gap-5 sm:grid-cols-3">
             {PAIN_POINTS.map((p, i) => (
               <RevealOnScroll key={p.label} delayMs={i * 100}>
                 <div className="rounded-xl border border-ink/10 bg-parchment p-6 shadow-sm">
-                  <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-coral">{p.label}</span>
+                  <span className="font-mono font-semibold text-[10px] uppercase tracking-[0.2em] text-coral">{p.label}</span>
                   <p className="mt-3 text-[15px] leading-relaxed text-ink/75">{p.text}</p>
                 </div>
               </RevealOnScroll>
@@ -157,13 +157,13 @@ export default function Home() {
       {/* HOW IT WORKS */}
       <section className="mx-auto max-w-6xl px-6 py-16 md:py-24">
         <RevealOnScroll>
-          <h2 className="font-display text-2xl text-ink sm:text-3xl">How it works</h2>
+          <h2 className="font-display font-semibold text-2xl text-ink sm:text-3xl">How it works</h2>
         </RevealOnScroll>
         <div className="mt-10 grid gap-10 sm:grid-cols-3">
           {STEPS.map((s, i) => (
             <RevealOnScroll key={s.n} delayMs={i * 100}>
-              <span className="font-display text-3xl text-marigold">{s.n}</span>
-              <h3 className="mt-3 font-display text-lg text-ink">{s.title}</h3>
+              <span className="font-display font-semibold text-3xl text-marigold">{s.n}</span>
+              <h3 className="mt-3 font-display font-semibold text-lg text-ink">{s.title}</h3>
               <p className="mt-2 text-[15px] leading-relaxed text-ink/70">{s.text}</p>
             </RevealOnScroll>
           ))}
@@ -175,8 +175,8 @@ export default function Home() {
       {/* SINGLE VALUE PROP */}
       <section className="border-y border-ink/10 bg-ink text-parchment">
         <div className="mx-auto max-w-3xl px-6 py-16 text-center md:py-20">
-          <p className="font-mono text-xs uppercase tracking-[0.2em] text-mint">Why just this one thing</p>
-          <h2 className="mt-4 font-display text-2xl leading-snug sm:text-3xl">
+          <p className="font-mono font-semibold text-xs uppercase tracking-[0.2em] text-mint">Why just this one thing</p>
+          <h2 className="mt-4 font-display font-semibold text-2xl leading-snug sm:text-3xl">
             No loans, no marketplace, no ten tabs.
             <br />
             Just a room and a roommate you can trust.
@@ -185,7 +185,7 @@ export default function Home() {
             Every relocating student is drowning in disconnected apps already. We&apos;re starting narrow on
             purpose — solve the single hardest decision well, then earn the right to do more.
           </p>
-          <Link href="/services" className="mt-6 inline-block font-mono text-xs text-marigold underline underline-offset-2">
+          <Link href="/services" className="mt-6 inline-block font-mono font-medium text-xs text-marigold underline underline-offset-2">
             See our full roadmap &rarr;
           </Link>
         </div>
@@ -194,13 +194,13 @@ export default function Home() {
       {/* WAITLIST */}
       <section id="waitlist" className="mx-auto max-w-2xl px-6 py-20 md:py-28">
         <div className="text-center">
-          <h2 className="font-display text-2xl text-ink sm:text-3xl">Help us validate this before we build it</h2>
+          <h2 className="font-display font-semibold text-2xl text-ink sm:text-3xl">Help us validate this before we build it</h2>
           <p className="mt-3 text-ink/65">
             We&apos;re a small pilot testing real demand. Two minutes, and you&apos;ll be first in line when
             rooms open up.
           </p>
           {count !== null && count > 0 && (
-            <p className="mt-4 font-mono text-xs uppercase tracking-[0.15em] text-mint">
+            <p className="mt-4 font-mono font-semibold text-xs uppercase tracking-[0.15em] text-mint">
               {count} student{count === 1 ? "" : "s"} already reserved a seat
             </p>
           )}
@@ -209,8 +209,8 @@ export default function Home() {
         <div className="mt-10 overflow-hidden rounded-2xl border border-ink/10 bg-white shadow-sm">
           {status === "success" ? (
             <div className="p-8 text-center">
-              <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-mint">Confirmed</p>
-              <h3 className="mt-3 font-display text-xl text-ink">You&apos;re on the list, {name.split(" ")[0]}.</h3>
+              <p className="font-mono font-semibold text-[10px] uppercase tracking-[0.2em] text-mint">Confirmed</p>
+              <h3 className="mt-3 font-display font-semibold text-xl text-ink">You&apos;re on the list, {name.split(" ")[0]}.</h3>
               <p className="mt-2 text-sm text-ink/65">We&apos;ll email {email} the moment your city opens up for the pilot.</p>
             </div>
           ) : (
@@ -247,7 +247,7 @@ export default function Home() {
                 className="mt-2 rounded-full bg-marigold px-6 py-3 text-sm font-semibold text-ink transition hover:brightness-95 disabled:opacity-60">
                 {status === "loading" ? "Reserving..." : "Reserve my seat"}
               </button>
-              <p className="text-center font-mono text-[10px] text-ink/40">We respect your privacy · No payment required</p>
+              <p className="text-center font-mono font-medium text-[10px] text-ink/40">We respect your privacy · No payment required</p>
             </form>
           )}
         </div>

@@ -23,8 +23,8 @@ export default function Testimonials() {
   return (
     <section className="border-y border-ink/10 bg-paper">
       <div className="mx-auto max-w-6xl px-6 py-16 md:py-20">
-        <p className="font-mono text-xs uppercase tracking-[0.2em] text-coral">Hear from students</p>
-        <p className="mt-1 font-mono text-[11px] text-ink/40">
+        <p className="font-mono font-semibold text-xs uppercase tracking-[0.2em] text-coral">Hear from students</p>
+        <p className="mt-1 font-mono font-medium text-[11px] text-ink/40">
           Illustrative quotes based on our persona research — not verified customer reviews.
         </p>
         <div className="mt-8 grid gap-5 sm:grid-cols-3">
